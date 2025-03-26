@@ -1,0 +1,193 @@
+/* Apply the same background color and text color */
+body {
+    background-color: #fffaf9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(153, 46, 46);
+  	height: 100vh;
+    overflow: scroll;
+    margin: 0;
+    /* Text color */
+}
+
+/* Style the headings */
+h1{
+    color: rgb(153, 46, 46);
+}
+.header h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+h2 {
+    color: rgb(153, 46, 46);
+    font-weight: lighter;
+}
+
+.header {
+    background-image: url("https://libraries.uh.edu/images/branches_anderson_02.png");
+    background-repeat: no-repeat;
+	background-size: cover;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    border: 0;
+    border-radius: 2vw;
+    padding: 0.8vw 2vw;
+    font-size: 1.3vw;
+    background-color: rgb(128, 144, 207);
+    color: white;
+    cursor: pointer;
+}
+
+/* Style the link */
+a {
+    text-decoration: none;
+    color: rgb(153, 46, 46);
+}
+.waitlist-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.waitlist-container h1{
+    border-bottom: 2px solid rgb(153, 46, 46);
+    padding-bottom: 5px;
+}
+
+.list{
+    display: flex;
+    height: auto;
+    top: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 90%;
+}
+
+.list editForm{
+    display: flex;
+    height: auto;
+    top: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 90%;
+}
+
+.list img{
+    display: block;
+    margin: 30px;
+    width : 350px;
+    height : auto;
+    border-radius: 10px;
+}
+
+.list ul{
+    list-style-type: none;
+}
+.list li{
+    width: auto;
+}
+
+.edit-button {
+    border: 0;
+    border-radius: 2vw;
+    padding: 0.8vw 2vw;
+    font-size: 1.3vw;
+    background-color: rgb(128, 144, 207);
+    color: white;
+    cursor: pointer;
+}
+
+/* Updated CSS class for generic tables */
+.generic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.generic-table th,
+.generic-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.generic-table th {
+    background-color: #f2f2f2;
+    color: rgb(153, 46, 46); /* Add maroon text color for table headers */
+}
+
+.generic-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.generic-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(153, 46, 46);
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    background-color: rgb(202, 64, 64);
+}
+
+#editForm input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#description{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.generic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}

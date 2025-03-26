@@ -1,0 +1,197 @@
+/* Resetting some default browser styles */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the page background and text */
+body {
+    background-color: #fffaf9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(153, 46, 46);
+    line-height: 1.6;
+}
+
+/* Making the main heading (h1) appealing */
+h1 {
+    color: rgb(153, 46, 46);
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+/* Logout button styles */
+.logout-container {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjust padding to make it smaller */
+    cursor: pointer;
+    transition: none; /* Disable the hover transition */
+}
+
+/* Style for the logout button on hover (optional) */
+.logout-button:hover {
+    background-color: red; /* Keep the same color on hover */
+}
+
+/* Styling for paragraphs (p) */
+p {
+    font-weight: lighter;
+    font-size: 2vw;
+    margin: 1vw 0;
+}
+
+/* Designing the button styles */
+button {
+    border: 0;
+    border-radius: 3vw;
+    padding: 1.4vw 2vw;
+    margin: 0.5vw;
+    font-size: 2vw;
+    background-color: rgb(128, 144, 207);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3d6cb7; /* Change background color on hover */
+}
+
+/* Styling for links (a) */
+a {
+    text-decoration: none;
+    color: rgb(153, 46, 46);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #a92a2a; /* Change text color on hover */
+}
+
+/* Customizing the horizontal rule (hr) */
+hr {
+    width: 90%;
+    margin: 3vw 0;
+    border: none;
+    border-top: 1px solid #ccc; /* Dotted line instead of the default solid line */
+}
+
+/* Centering the content text */
+.text-center {
+    text-align: center;
+}
+
+/* Centering content both vertically and horizontally */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Creating a CSS class for the book cover container */
+.book-covers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-covers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for book cover images */
+img.book-cover {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #ddd; /* Add a light border around book covers */
+    border-radius: 5px;
+}
+
+/* Style for user information container */
+.user-info {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/* Style for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+/* Styling for random item cover images */
+img.item-cover {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 10px;
+    border: 2px solid #ddd; /* Add a light border around item covers */
+    border-radius: 5px;
+}
+
+/* Add a fading effect on hover */
+.cover-fade:hover {
+    opacity: 0.8; /* Adjust the opacity as desired */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ff1500;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: pointer; /* Add cursor style to indicate it's clickable */
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+/* Tooltip style */
+.notification .alert-count:hover::before {
+    content: "You have outstanding fines that need to be settled before you can check out more items from the library. Please clear your fines at your earliest convenience. If you have any questions or need assistance, please contact the library manager for help.";
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: normal;
+    top: 40px; /* Adjust as needed to position the tooltip correctly */
+    left: 0;
+    width: 200px; /* Set the width to fit your content */
+    visibility: hidden; /* Hidden by default */
+}
+
+.notification .alert-count:hover::before {
+    visibility: visible; /* Display the tooltip on hover */
+}
